@@ -9,6 +9,9 @@ import StoreAgreement from './Components/StoreAgreement';
 import Dashboard from './Components/Dashboard';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Orders from './Components/Orders'
+import AddProduct from './Components/AddProduct';
+import ProductListing from './Components/ProductList';
+
 
 function App() {
     return (
@@ -21,6 +24,8 @@ function App() {
                 <Route path='/ContactForm' element={<ContactForm/>}/>
                 <Route path='/dashboard' element={<Dashboard/>}/>
                 <Route path='/orders' element ={<Orders/>}/>
+                <Route path ='/addProduct' element={<AddProduct/>}/>
+                <Route path ='/productList' element={<ProductListing/>}/>
             </Routes>
 
         </Router>

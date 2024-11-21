@@ -39,9 +39,9 @@ const Sidebar = () => {
         </li>
         <li className="nav-item">
           <Link
-            to="/products"
-            className={`nav-link ${activeItem === '/products' ? 'active' : ''}`}
-            onClick={() => handleItemClick('/products')}
+            to="/productList"
+            className={`nav-link ${activeItem === '/productList' ? 'active' : ''}`}
+            onClick={() => handleItemClick('/productList')}
           >
             <i className="bi bi-cart-fill me-2"></i>
             My Products

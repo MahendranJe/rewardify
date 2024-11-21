@@ -440,6 +440,28 @@ margin: 1rem;
   .xx-small {
     font-size: xx-small;
   }
+
+  .productbg-white {
+    background-color: white;
+    margin-top: 2rem;
+    padding: 30px;
+  }
+
+  .product-card{
+    width: 100%;
+    margin: 1rem;
+    border-radius: 5pxs;
+  }
+
+  .addProduct-card{
+
+    background-color: white;
+  
+    width: 100%;
+    border-radius: 5pxs;
+
+  }
+  
   
   
   
