@@ -1,0 +1,447 @@
+.background-container {
+    background-image: url('/src//Components/Images/loginbackground.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardcontainer {
+    width: 100%;
+    height: 900px;
+    left: 242px;
+    gap: 0px;
+    background: #f4f5f9;
+    opacity: 1px;
+}
+
+.quickAccessCard {
+    width: 500px !important;
+    top: 50px !important;    
+    left: 50px !important;
+    gap: 0px;
+    border-radius: 12px !important;
+    opacity: 0px;
+    margin: 10px;
+
+}
+
+.ordersCard {
+    width: 90% !important;
+    top: 50px !important;    
+    left: 50px !important;
+    gap: 0px;
+    border-radius: 12px !important;
+    opacity: 0px;
+    margin: 10px;
+
+}
+
+.tdBorder{
+    border-radius: 12px !important;
+    border-color: #668D12;
+
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: center;
+
+}
+
+.displayflex {
+    display: flex;
+}
+
+.displayflex1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-logo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    gap: 0px;
+    border-radius: 24px;
+    opacity: 0px;
+
+}
+
+.btn-success {
+    width: 395px;
+    height: 50px;
+    padding: 14px 30px 14px 30px;
+    gap: 4px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: linear-gradient(90deg, #668D12, #ACC43F 113.61%);
+    margin-bottom: 1rem;
+
+}
+
+.btn-outline {
+    width: 395px;
+    height: 50px;
+    padding: 14px 30px 14px 30px;
+    gap: 4px;
+    border-radius: 8px;
+    opacity: 0px;
+    margin-bottom: 1rem;
+
+}
+
+.btn-success1 {
+    width: 205px;
+    font-family: serif;
+    color: white;
+    height: 50px;
+    padding: 14px 30px 14px 30px;
+    gap: 4px;
+    border-radius: 8px;
+    border-color: #668D12;
+    opacity: 0px;
+    background: linear-gradient(90deg, #668D12, #ACC43F 113.61%);
+    margin-bottom: 1rem;
+
+}
+
+.btn-success2 {
+    width: 205px;
+    font-family: serif;
+    color: #668D12;
+    height: 50px;
+    padding: 14px 30px 14px 30px;
+    gap: 4px;
+    border-radius: 8px;
+    border-color: #668D12;
+    opacity: 0px;
+    background-color: white;
+    margin-bottom: 1rem;
+
+}
+
+
+
+
+.btn-light {
+    width: 395px;
+    height: 50px;
+    padding: 14px 30px 14px 30px;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid;
+    border-color: linear-gradient(90deg, #668D12 0%, #ACC43F 113.61%);
+}
+
+.login-page1 {
+    display: none;
+}
+
+.margin-bottom {
+    margin-bottom: 6rem;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 6rem;
+}
+
+.otp-field {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.otp-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.storelogo {
+    width: 215px;
+    height: 167.27px;
+    top: 326px;
+    left: 603px;
+
+}
+
+.contactHeader {
+    width: 100%;
+    height: 377px;
+}
+
+.h2text {
+    padding-left: 30px;
+    color: #668D12;
+    border-bottom: 1px solid;
+}
+
+.form-container {
+    width: 488px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 476px;
+    gap: 48px;
+    opacity: 0px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.form-subcontainer {
+    width: 426px;
+    height: 454px;
+    top: 27px;
+    left: 31px;
+    gap: 32px;
+    opacity: 0px;
+
+}
+
+.form-subcontainer2 {
+    width: 426px;
+    height: 215px;
+    gap: 0px;
+    border: 1px;
+    opacity: 0px;
+}
+
+.form-headerdetails {
+    width: 289px;
+    height: 91px;
+    margin: 20px;
+    gap: 8px;
+    opacity: 0px;
+
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.storeinfo-container {
+    width: 690px;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 372px;
+    gap: 48px;
+    opacity: 0px;
+    border: 1px solid;
+
+}
+
+.step-panel {
+    padding: 20px;
+    height: 100vh;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-top: 1rem;
+}
+
+.step-list {
+    list-style-type: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.step-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.step-list li .step-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    position: relative;
+}
+
+.step-list li.active .step-circle,
+.step-list li .active-circle {
+    background-color: green;
+    border-color: green;
+}
+
+.step-list li::after {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 20px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background-color: #ccc;
+}
+
+.step-list li.active::after {
+    background-color: green;
+}
+
+.step-list li:last-child::after {
+    display: none;
+}
+
+.step-content h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.step-content p {
+    font-size: 12px;
+    color: gray;
+}
+
+.step-content h5 {
+    font-size: 14px;
+    color: #888;
+}
+
+.storeinfocard {
+    width: 361px;
+    padding: 20px;
+    gap: 0px;
+    margin-top: 1rem;
+    border: thin solid gray;
+    border-radius: 10px;
+
+}
+
+.form-check {
+    padding: 10px;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+}
+
+.react-time-picker__wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: thin solid gray;
+    border-radius: 10px;
+}
+/* Sidebar.css */
+.sidebar {
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .nav-link {
+    color: #6c757d;
+    font-weight: 500;
+    padding: 12px 16px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-link.active {
+    background-color: #f3f8e0; /* Light green color */
+    border-left: 4px solid #8bc34a; /* Left border for the active item */
+    color: #000;
+  }
+  
+  .nav-link:hover {
+    background-color: #f3f8e0;
+    color: #000;
+  }
+  
+  .nav-link i {
+    font-size: 1.2rem;
+  }
+  
+  .text-center img {
+    border-radius: 50%;
+  }
+
+  .icon-btn {
+    background-color: #f4f8e7;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Add custom styles for better alignment if needed */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa; /* Change the row background color on hover */
+  }
+  
+  .bi-person-circle {
+    font-size: 1.5rem; /* Adjust the size of the icon */
+  }
+  
+  .text-muted {
+    font-size: 0.875rem; /* Smaller font size for muted text */
+  }
+  
+  .text-success {
+    font-weight: bold; 
+  }
+
+  .text-danger {
+    font-weight: bold; 
+  }
+  
+  .text-info {
+    font-style: italic; /* Italicize payment method */
+  }
+
+  .dashboardOpt{
+    width: 62px;
+height: 56px;
+gap: 0px;
+border-radius: 8px;
+opacity: 0px;
+background-color:#F2F8DF;
+margin: 1rem;
+
+  }
+
+  .xx-small {
+    font-size: xx-small;
+  }
+  
+  
+  
