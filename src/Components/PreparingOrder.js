@@ -21,6 +21,174 @@ const PrepareOrdersList = () => {
       total: 150,
       method: "UPI",
     },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },  {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
+    {
+      id: "12345",
+      date: "Apr 10, 2024",
+      name: "Rajesh Kannan",
+      number: "+918526547512",
+      address: "R S Puram, Coimbatore",
+      items: [
+        { name: "Ooty apple", price: 100 },
+        { name: "White Egg", quantity: 5, price: 50 },
+      ],
+      total: 150,
+      method: "UPI",
+    },
     // Add more orders here...
   ];
 
@@ -49,7 +217,7 @@ const PrepareOrdersList = () => {
     <div className="table-responsive mt-3">
       <Row>
         {orders.map((order, index) => (
-          <Col key={index} md={6} className="mb-4">
+          <Col key={index} sm={12} md={6} lg={4} className="mb-4">
             <Card className="mb-4 shadow-sm border-0">
               <Card.Header className="d-flex justify-content-between align-items-center">
                 <span className="text-success fw-bold">Order Id: {order.id}</span>
@@ -104,8 +272,6 @@ const PrepareOrdersList = () => {
           </Col>
         ))}
       </Row>
-
-      {/* Modal for Verifying Items */}
       {selectedOrder && (
         <Modal show={showModal} onHide={() => setShowModal(false)} centered>
           <Modal.Header closeButton>
