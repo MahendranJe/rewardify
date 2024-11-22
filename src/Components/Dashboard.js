@@ -38,17 +38,13 @@ const Dashboard = () => {
             <div className="d-flex flex-column flex-md-row">
                 <Sidebar />
                 <div className="dashboardcontainer flex-grow-1 px-3">
-                    <Row className="gy-4">
-                        {/* Left Column */}
+                    <Row className="gy-4">                      
                         <Col lg={6} md={12}>
-                            {/* Quick Actions */}
                             <Card className="quickAccessCard mb-4">
                                 <Card.Body>
                                     <QuickActionsCarousel />
                                 </Card.Body>
                             </Card>
-
-                            {/* Recent Transactions */}
                             <Card className="quickAccessCard mb-4">
                                 <Card.Body>
                                     <h5>Recent Transactions</h5>
@@ -65,8 +61,6 @@ const Dashboard = () => {
                                             </Nav.Link>
                                         </Nav.Item>
                                     </Nav>
-
-                                    {/* Table for Transactions */}
                                     <div className="table-responsive mt-3">
                                         <table className="table table-hover">
                                             <tbody>
@@ -90,10 +84,7 @@ const Dashboard = () => {
                                 </Card.Body>
                             </Card>
                         </Col>
-
-                        {/* Right Column */}
                         <Col lg={4} md={12}>
-                            {/* My Orders */}
                             <Card className="quickAccessCard mb-4">
                                 <Card.Body>
                                     <h5>My Orders</h5>
@@ -111,8 +102,6 @@ const Dashboard = () => {
                                             <Nav.Link eventKey="placed-orders">Placed Orders</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
-
-                                    {/* Orders Table */}
                                     {showOrderConfirmation && (
                                         <div className="table-responsive mt-3">
                                             <table className="table table-hover">

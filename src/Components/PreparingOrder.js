@@ -189,7 +189,6 @@ const PrepareOrdersList = () => {
       total: 150,
       method: "UPI",
     },
-    // Add more orders here...
   ];
 
   const handleVerifyClick = (order) => {

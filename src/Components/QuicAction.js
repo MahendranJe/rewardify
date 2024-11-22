@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import { Cash, Wallet, Clock, CardText } from "react-bootstrap-icons";
 
 const QuickActionsCarousel = () => {
@@ -14,7 +14,6 @@ const QuickActionsCarousel = () => {
     { id: 8, icon: <CardText size={32} />, text: "Settings" },
   ];
 
-  // Define how many items to show at once
   const itemsPerPage = 4;
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,7 +29,7 @@ const QuickActionsCarousel = () => {
     }
   };
 
-  // Slice the visible items
+  
   const visibleActions = actions.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (

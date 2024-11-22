@@ -19,7 +19,7 @@ const ProductListing = () => {
                 { name: "Dove Natural Soap", price: "₹100", quantity: "5 (0.5 kg)", available: false },
             ],
         },
-        // Add other categories if needed...
+     
     ]);
 
     const toggleCategory = (category) => {
@@ -86,7 +86,6 @@ const ProductListing = () => {
         },
     ];
 
-    // Filter categories and products based on search
     const filteredData = data
         .filter((category) =>
             category.category.toLowerCase().includes(searchTerm) ||
@@ -111,7 +110,6 @@ const ProductListing = () => {
                     <div className="productbg-white">
                         <h3 className="mb-3">My Product Listing</h3>
                         <div className="d-flex justify-content-between align-items-center mb-4">
-                            {/* Add Product and Back Buttons */}
                             <div>
                                 {!isAddingProduct && (
                                     <button
@@ -201,12 +199,10 @@ const ProductListing = () => {
                                                                                 <button
                                                                                     className="btn btn-link p-0"
                                                                                     type="button"
-                                                                                    onClick={() => toggleDropdown(idx)} // Pass the index to toggle
-                                                                                >
+                                                                                    onClick={() => toggleDropdown(idx)}                                                                >//
                                                                                     <span className="text-muted">:</span>
                                                                                 </button>
 
-                                                                                {/* Conditionally render dropdown menu based on the state of openDropdown */}
                                                                                 {openDropdown === idx && (
                                                                                     <ul className="dropdown-menu show" aria-labelledby={`dropdownMenuButton-${idx}`}>
                                                                                         <li>

@@ -11,8 +11,6 @@ import Orders from './Components/Orders'
 import AddProduct from './Components/AddProduct';
 import ProductListing from './Components/ProductList';
 import MyProfile from './Components/Profile';
-
-
 function App() {
     return (
         <Router>

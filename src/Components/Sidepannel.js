@@ -3,11 +3,11 @@ import '../Style.css';
 import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
-  const location = useLocation(); // To get the current route
-  const [activeItem, setActiveItem] = useState(location.pathname); // Initialize with current path
+  const location = useLocation(); 
+  const [activeItem, setActiveItem] = useState(location.pathname); 
 
   const handleItemClick = (item) => {
-    setActiveItem(item); // Update the active item state
+    setActiveItem(item); 
   };
 
   return (

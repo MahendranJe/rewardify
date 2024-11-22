@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Form, Button, Row, Col, Card, Nav } from "react-bootstrap";
+import { Form, Button, Row, Col, Card, Nav ,Accordion} from "react-bootstrap";
 import Sidebar from './Sidepannel';
 import Header from './DashboardHeader';
+import { FaUser, FaShoppingCart, FaWallet, FaCheckCircle }from "react-icons/fa";
 
 const MyProfile = () => {
     const [activePage, setActivePage] = useState("profile");
+    const [activeKey, setActiveKey] = useState(null);
 
     const [profileData, setProfileData] = useState({
     });
@@ -43,13 +45,31 @@ const MyProfile = () => {
             };
         });
     };
-
+    const toggleCategory = (key) => {
+        setActiveKey(activeKey === key ? null : key); 
+      };
     const handleImageUpload = (e) => {
         const file = e.target.files[0];
         if (file) {
             setShopData((prev) => ({ ...prev, storeImage: file }));
         }
     };
+
+    const data = [
+        {
+          category: "about us",
+          value:"Department stores are large retail establishments that offer a wide range of products across various categories, such as clothing, household items, and electronics, all under one roof. Originating in the 19th century, they revolutionized shopping by providing diverse goods in a single location. Notable examples include Macy's, Marshall Field's, and Hudson's. These stores often serve as community hubs, offering services like personal shopping and special events. They are known for their visually appealing window displays and have a long history of shaping consumer culture through innovative marketing. Today, they continue to be influential in retail, adapting to changing shopping trends and challenges posed by online commerce."
+        },
+        {
+            category: "Tearm and Condition",
+            value:"Department stores are large retail establishments that offer a wide range of products across various categories, such as clothing, household items, and electronics, all under one roof. Originating in the 19th century, they revolutionized shopping by providing diverse goods in a single location. Notable examples include Macy's, Marshall Field's, and Hudson's. These stores often serve as community hubs, offering services like personal shopping and special events. They are known for their visually appealing window displays and have a long history of shaping consumer culture through innovative marketing. Today, they continue to be influential in retail, adapting to changing shopping trends and challenges posed by online commerce."
+          },
+          {
+            category: "Privacy Policy",
+            value:"Department stores are large retail establishments that offer a wide range of products across various categories, such as clothing, household items, and electronics, all under one roof. Originating in the 19th century, they revolutionized shopping by providing diverse goods in a single location. Notable examples include Macy's, Marshall Field's, and Hudson's. These stores often serve as community hubs, offering services like personal shopping and special events. They are known for their visually appealing window displays and have a long history of shaping consumer culture through innovative marketing. Today, they continue to be influential in retail, adapting to changing shopping trends and challenges posed by online commerce."
+          },
+      ];
+    
 
     const handleSave = () => {
         if (activePage === "profile") {
@@ -95,7 +115,7 @@ const MyProfile = () => {
                 />
             </Form.Group>
 
-            <Button variant="primary" onClick={handleSave}>
+            <Button className="btn-success" onClick={handleSave}>
                 Save Changes
             </Button>
         </Form>
@@ -192,7 +212,7 @@ const MyProfile = () => {
                     </div>
                 )}
             </Form.Group>
-            <Button variant="primary" onClick={handleSave}>
+            <Button className="btn-success" onClick={handleSave}>
                 Save Changes
             </Button>
         </Form>
@@ -264,11 +284,29 @@ const MyProfile = () => {
                     </li>
                 </ul>
             </Form.Group>
-            <Button variant="primary" onClick={handleSave}>
+            <Button className="btn-success" onClick={handleSave}>
                 Save Changes
             </Button>
         </Form>
     );
+
+    const renderProducts = () => (
+        <Accordion activeKey={activeKey}>
+            {data.map((item, index) => (
+                <Accordion.Item eventKey={index} key={index}>
+                    <Accordion.Header onClick={() => toggleCategory(index)}>
+                        {item.category}
+                    </Accordion.Header>
+                    <Accordion.Body>
+                       
+                            <p>{item.value}</p>
+                       
+                    </Accordion.Body>
+                </Accordion.Item>
+            ))}
+        </Accordion>
+    );
+
 
     return (
         <div>
@@ -278,23 +316,28 @@ const MyProfile = () => {
             <div className="dashboardcontainer flex-grow-1 px-3">
         <Row>
             <Col md={3} className="bg-white vh-100 p-3">
-                <Nav className="flex-column">
-                    <Nav.Item>
-                        <Nav.Link active={activePage === "profile"} onClick={() => setActivePage("profile")}>
-                            Profile Details
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link active={activePage === "shop"} onClick={() => setActivePage("shop")}>
-                            Shop Details
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link active={activePage === "wallet"} onClick={() => setActivePage("wallet")}>
-                            My Wallet
-                        </Nav.Link>
-                    </Nav.Item>
-                </Nav>
+            <Nav className="flex-column">
+      <Nav.Item>
+        <Nav.Link active={activePage === "profile"} onClick={() => setActivePage("profile")}>
+          <FaUser /> Profile Details
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link active={activePage === "shop"} onClick={() => setActivePage("shop")}>
+          <FaShoppingCart /> Shop Details
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link active={activePage === "wallet"} onClick={() => setActivePage("wallet")}>
+          <FaWallet /> My Wallet
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link active={activePage === "agree"} onClick={() => setActivePage("agree")}>
+          <FaCheckCircle /> About Rewardify
+        </Nav.Link>
+      </Nav.Item>
+    </Nav>
             </Col>
 
             <Col md={9} className="p-4 bg-white">
@@ -302,6 +345,7 @@ const MyProfile = () => {
                     {activePage === "profile" && renderProfileForm()}
                     {activePage === "shop" && renderShopDetailsForm()}
                     {activePage === "wallet" && renderWalletForm()}
+                    {activePage === 'agree' && renderProducts()}
                 </Card>
             </Col>
         </Row>

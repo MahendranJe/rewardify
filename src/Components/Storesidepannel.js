@@ -4,7 +4,6 @@ function Storesidepannel() {
   return (
     <div className="step-panel">
     <ul className="step-list">
-      {/* Step 1 */}
       <li className="active">
         <div className="step-circle active-circle"></div>
         <div className="step-content">
@@ -13,8 +12,6 @@ function Storesidepannel() {
           <p>Owner name, Store location, Store address</p>
         </div>
       </li>
-      
-      {/* Step 2 */}
       <li>
         <div className="step-circle"></div>
         <div className="step-content">
@@ -23,8 +20,6 @@ function Storesidepannel() {
           <p>GSTIN Number, PAN Number, Bank details</p>
         </div>
       </li>
-      
-      {/* Step 3 */}
       <li>
         <div className="step-circle"></div>
         <div className="step-content">

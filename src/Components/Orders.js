@@ -21,7 +21,7 @@ const OrderCompleted = () => (
 );
 
 const OrdersComponent = () => {
-  const [selectedTab, setSelectedTab] = useState("confirmation"); // Ensure lowercase
+  const [selectedTab, setSelectedTab] = useState("confirmation"); 
 
   return (
     <div>
@@ -33,12 +33,10 @@ const OrdersComponent = () => {
           <div className="text-muted mb-3 text-center">
             Last Update: June 02, 2024 | 11:25 PM
           </div>
-
-          {/* Tab Navigation with Bootstrap styling */}
           <Tab.Container activeKey={selectedTab} onSelect={setSelectedTab}>
             <Nav variant="tabs" className="mb-3 justify-content-start">
               <Nav.Item>
-                <Nav.Link eventKey="confirmation" className="fw-bold">Confirmation</Nav.Link> {/* Match "confirmation" */}
+                <Nav.Link eventKey="confirmation" className="fw-bold">Confirmation</Nav.Link> 
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="preparing" className="fw-bold">Preparing</Nav.Link>

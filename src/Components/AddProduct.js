@@ -242,7 +242,6 @@ const AddProduct = () => {
               <Card.Body>
                 <Card.Title>Product Image</Card.Title>
                 <div className="d-flex flex-column align-items-center">
-                  {/* Hidden File Input */}
                   <Form.Group controlId="productImage" className="position-relative">
                     <Form.Control
                       type="file"
@@ -256,7 +255,6 @@ const AddProduct = () => {
                         height: "100%",
                       }}
                     />
-                    {/* Styled Upload Button */}
                     <button
                       type="button"
                       className="btn btn-light d-flex flex-column align-items-center"
