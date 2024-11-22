@@ -16,6 +16,13 @@
     opacity: 1px;
 }
 
+.dashboardcontainer1 {
+    left: 242px;
+    gap: 0px;
+    background: #ffffff;
+    opacity: 1px;
+}
+
 .quickAccessCard {
     width: 500px !important;
     top: 50px !important;    

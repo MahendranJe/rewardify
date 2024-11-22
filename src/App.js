@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login';
-import ContactHeader from './Components/ContactHeader';
 import ContactForm from './Components/ContactForm';
 import StoreBasicInfo from './Components/StoreBasicInfo';
 import StoreDocument from './Components/StoreDocument'
@@ -11,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Orders from './Components/Orders'
 import AddProduct from './Components/AddProduct';
 import ProductListing from './Components/ProductList';
+import MyProfile from './Components/Profile';
 
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
                 <Route path='/orders' element ={<Orders/>}/>
                 <Route path ='/addProduct' element={<AddProduct/>}/>
                 <Route path ='/productList' element={<ProductListing/>}/>
+                <Route path ='/myProfile' element={<MyProfile/>}/>
             </Routes>
 
         </Router>

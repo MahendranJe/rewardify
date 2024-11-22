@@ -40,7 +40,7 @@ const ProductListing = () => {
     };
 
     const handleToggleChange = (idx) => {
-        const updatedProducts = [...data];
+        const updatedProducts = [...datas];
         updatedProducts[idx].available = !updatedProducts[idx].available;
         setData(updatedProducts);
     };
@@ -124,14 +124,12 @@ const ProductListing = () => {
                                 {isAddingProduct && (
                                     <button
                                         className="btn btn-outline-secondary"
-                                        onClick={() => setIsAddingProduct(false)} // Back to list view
+                                        onClick={() => setIsAddingProduct(false)} 
                                     >
                                         Back
                                     </button>
                                 )}
                             </div>
-
-                            {/* Search Input */}
                             <div className="input-group" style={{ maxWidth: "300px" }}>
                                 <input
                                     type="text"
@@ -142,8 +140,6 @@ const ProductListing = () => {
                                 <button className="btn btn-outline-secondary">Search</button>
                             </div>
                         </div>
-
-                        {/* Conditional rendering for AddProduct component */}
                         {isAddingProduct ? (
                             <AddProduct />
                         ) : (

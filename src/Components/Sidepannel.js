@@ -49,9 +49,9 @@ const Sidebar = () => {
         </li>
         <li className="nav-item">
           <Link
-            to="/profile"
-            className={`nav-link ${activeItem === '/profile' ? 'active' : ''}`}
-            onClick={() => handleItemClick('/profile')}
+            to="/myProfile"
+            className={`nav-link ${activeItem === '/myProfile' ? 'active' : ''}`}
+            onClick={() => handleItemClick('/myProfile')}
           >
             <i className="bi bi-person-fill me-2"></i>
             Profile
