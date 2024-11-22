@@ -172,7 +172,7 @@ const ConfirmationOrders = () => {
   return (
     <Row>
       {confirmationOrders.map((order, index) => (
-        <Col sm={12} md={6} lg={4} key={index}>
+        <Col sm={12} md={6} lg={6} key={index}>
           <OrderCard order={order} />
         </Col>
       ))}

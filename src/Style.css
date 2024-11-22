@@ -14,13 +14,17 @@
     gap: 0px;
     background: #f4f5f9;
     opacity: 1px;
+    width: 100%;
+    
 }
 
 .dashboardcontainer1 {
     left: 242px;
-    gap: 0px;
     background: #ffffff;
-    opacity: 1px;
+    background-color: white;
+    margin-top: 2rem;
+    padding: 30px;
+    border-radius: 20px;
 }
 
 .quickAccessCard {

@@ -19,7 +19,7 @@ const ProductListing = () => {
                 { name: "Dove Natural Soap", price: "₹100", quantity: "5 (0.5 kg)", available: false },
             ],
         },
-     
+
     ]);
 
     const toggleCategory = (category) => {
@@ -107,7 +107,7 @@ const ProductListing = () => {
             <div className="d-flex flex-column flex-md-row">
                 <Sidebar />
                 <div className="dashboardcontainer flex-grow-1 px-3">
-                    <div className="productbg-white">
+                    <div className="dashboardcontainer1">
                         <h3 className="mb-3">My Product Listing</h3>
                         <div className="d-flex justify-content-between align-items-center mb-4">
                             <div>
@@ -122,7 +122,7 @@ const ProductListing = () => {
                                 {isAddingProduct && (
                                     <button
                                         className="btn btn-outline-secondary"
-                                        onClick={() => setIsAddingProduct(false)} 
+                                        onClick={() => setIsAddingProduct(false)}
                                     >
                                         Back
                                     </button>
@@ -199,8 +199,7 @@ const ProductListing = () => {
                                                                                 <button
                                                                                     className="btn btn-link p-0"
                                                                                     type="button"
-                                                                                    onClick={() => toggleDropdown(idx)}                                                                >//
-                                                                                    <span className="text-muted">:</span>
+                                                                                    onClick={() => toggleDropdown(idx)}>                                                                    <span className="text-muted">:</span>
                                                                                 </button>
 
                                                                                 {openDropdown === idx && (

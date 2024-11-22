@@ -314,6 +314,7 @@ const MyProfile = () => {
         <div className="d-flex flex-column flex-md-row">
             <Sidebar />
             <div className="dashboardcontainer flex-grow-1 px-3">
+                <div className="dashboardcontainer1">
         <Row>
             <Col md={3} className="bg-white vh-100 p-3">
             <Nav className="flex-column">
@@ -349,6 +350,7 @@ const MyProfile = () => {
                 </Card>
             </Col>
         </Row>
+        </div>
         </div>
         </div>
         </div>

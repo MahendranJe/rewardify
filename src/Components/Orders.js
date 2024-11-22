@@ -25,14 +25,13 @@ const OrdersComponent = () => {
 
   return (
     <div>
-      <Header />
-      <div className="d-flex flex-column flex-md-row">
+    <Header />
+    <div className="d-flex flex-column flex-md-row">
         <Sidebar />
         <div className="dashboardcontainer flex-grow-1 px-3">
-          <h3 className="text-center mb-4">My Orders</h3>
-          <div className="text-muted mb-3 text-center">
-            Last Update: June 02, 2024 | 11:25 PM
-          </div>
+
+          <div className="dashboardcontainer1">
+         
           <Tab.Container activeKey={selectedTab} onSelect={setSelectedTab}>
             <Nav variant="tabs" className="mb-3 justify-content-start">
               <Nav.Item>
@@ -67,6 +66,7 @@ const OrdersComponent = () => {
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
+          </div>
         </div>
       </div>
     </div>

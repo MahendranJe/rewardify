@@ -216,7 +216,7 @@ const PrepareOrdersList = () => {
     <div className="table-responsive mt-3">
       <Row>
         {orders.map((order, index) => (
-          <Col key={index} sm={12} md={6} lg={4} className="mb-4">
+          <Col key={index} sm={12} md={6} lg={6} className="mb-4">
             <Card className="mb-4 shadow-sm border-0">
               <Card.Header className="d-flex justify-content-between align-items-center">
                 <span className="text-success fw-bold">Order Id: {order.id}</span>
