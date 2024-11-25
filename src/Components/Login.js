@@ -4,31 +4,31 @@ import '../Style.css'
 import logo from '../Components/Images/companylogo.png'
 import storeimage from '../Components/Images/store.png'
 import { useNavigate } from "react-router-dom"; 
-import {generateOTP} from "../State/api/auth"
+import { useDispatch, useSelector } from "react-redux";
+import {generateOtpAction} from "../redux/action/loginAction"
+
 
 function Login() {
   const [visibleCard, setVisibleCard] = useState(1);
   const navigate = useNavigate();
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("")
   const [message, setMessage] = useState("");
+  const dispatch = useDispatch();
+    const { loading, otpResponse, error } = useSelector((state) => state.otp);
 
   const handleShowCard = (cardNumber) => {
     setVisibleCard(cardNumber);
   }; 
 
-  const handleGenerateOTP = async () => {
-    setLoading(true);
-    setMessage("");
-    try {
-      const response = await generateOTP(phoneNumber); // Call the API
-      setMessage(`OTP sent successfully: ${response.otp}`);
-    } catch (error) {
-      setMessage(error.message || "Failed to send OTP");
-    } finally {
-      setLoading(false);
-    }
-  };
+ 
+    
+  
+    const handleGenerateOtp = () => {
+      const userData = { "contactNo": "9999999999" , "dialCode":"91" }; // Example data
+      dispatch(generateOtpAction(userData));
+      handleShowCard(3)
+    };
+  
   
   const [otp, setOtp] = useState(new Array(4).fill(""));
   const handleChange = (element, index) => {
@@ -63,7 +63,7 @@ function Login() {
           <h5 className="card-title">Get started with REWARDIFY</h5>
           <p className="card-text">Enter your mobile number or Shop ID to get started</p>
           <input type="tel" class="form-control margin-bottom" id="inputPhoneNumber" placeholder="Enter your phone number" />
-          <button type="button"onClick={() => handleShowCard(3)} class="btn btn-success">Send OTP</button>
+          <button type="button"onClick={() => handleGenerateOtp()} class="btn btn-success">Send OTP</button>
           <p className="card-text">By clicking, you agree to our Terms & Conditions and Privacy Policy.</p>
         </div>
       </div>}

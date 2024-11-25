@@ -1,5 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Provider } from "react-redux";
+import ReactDOM from "react-dom";
+import store from "../src/redux/store/store"
 import Login from './Components/Login';
 import ContactForm from './Components/ContactForm';
 import StoreBasicInfo from './Components/StoreBasicInfo';
@@ -13,6 +16,7 @@ import ProductListing from './Components/ProductList';
 import MyProfile from './Components/Profile';
 function App() {
     return (
+        <Provider store={store}>
         <Router>
             <Routes>
                 <Route path='/' element={<Login />} />
@@ -28,6 +32,8 @@ function App() {
             </Routes>
 
         </Router>
+
+        </Provider>
     );
 }
 
